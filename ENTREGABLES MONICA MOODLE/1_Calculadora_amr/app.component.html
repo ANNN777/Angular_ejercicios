@@ -1,0 +1,25 @@
+{{title}}
+
+<h3>Inserta los números correspondientes: </h3>
+
+<!-- Numero 1 -->
+<input type="number" [(ngModel)]="numero1">
+<!-- Numero 2 -->
+<input type="number" [(ngModel)]="numero2">
+
+<!-- 3 botones. Suma, Resta y Multiplicación -->
+<button type="button" (click)="sumar()">SUMA</button>
+<button type="button" (click)="restar()">RESTA</button>
+<button type="button" (click)="multiplicacion()">MULTIPLICACION</button>
+
+<p>{{resultado}}</p><!-- Inrerpolamos a la variable resultado -->
+
+
+
+<!-- /*<p>{{mitexto}}</p>
+
+<p [class]="clase">Mi nombre es {{nombre}}</p>
+ <input type="text" [(ngModel)]="texto1">
+<button type="button" (click)="muestra()">CAMBIA COLOR</button>
+<Creamos una función llamada 
+ <img [src]="ruta" alt="imagen -->

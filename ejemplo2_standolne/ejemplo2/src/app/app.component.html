@@ -1,0 +1,23 @@
+{{title}}
+
+<p>{{mitexto}}</p>
+
+<p [class]="clase">Mi nombre es {{nombre}}</p>
+<input type="text" [(ngModel)]="texto1">
+<button type="button" (click)="muestra()">CAMBIA COLOR</button>
+<!-- Creamos una función llamada -->
+ <img [src]="ruta" alt="imagen1">
+
+ <p *ngIf="evalua">Hola Alumnos</p><!-- ngIF, en el Common Module de Angular est´sn lsd directivas clásicas, el ngFor,
+ el ngFor, el ngwhile -->
+
+ <ul>
+    <li *ngFor="let nombre of nombres">{{nombre}}</li><!-- Recorro el array con el ngFor, y voy llamando a 
+    cada nombre del Array -->
+ </ul>
+
+ <ul>
+    <li *ngFor="let nombre of nombres; let i=index">Alumno {{i+1}}: {{nombre}}</li><!-- Recorro el array con el ngFor, y voy llamando a 
+    cada nombre del Array -->
+ </ul>
+<app-componente1 [nombre_padre]="nombre"></app-componente1>
