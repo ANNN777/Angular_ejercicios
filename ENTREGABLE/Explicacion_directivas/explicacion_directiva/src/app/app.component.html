@@ -1,0 +1,35 @@
+<h1>Proyecto directivas works!</h1>
+
+@for(alumno of alumnos; track $index){ <!-- el index está apuntando al index del array, a la hora de recorrerse -->
+  <p>{{alumno}}</p> <!-- Para cada uno de los alumnos del array crea una etiqueta tipo p y la servimos en el html -->
+}
+
+@for(alumno of alumnos; track $index){ <!-- el index está apuntando al index del array, a la hora de recorrerse -->
+  <p>{{alumnos[1]}}</p> <!-- Para cada uno de los alumnos del array crea una etiqueta tipo p y la servimos en el html -->
+}
+
+<h2>lLmando a la clase Clase</h2>
+
+@for(alumno of alumnos; track $index){ <!-- el index está apuntando al index del array, a la hora de recorrerse -->
+  <p [class]="clase">{{alumno}}</p>
+  } 
+
+<!-- <p *ngFor="let " -->
+<h2>La directiva IF</h2>
+
+@if (muestra) {
+  @for(alumno of alumnos; track $index){
+
+    <p [class]="clase">{{alumnos}}</p>  
+  }
+}
+
+<!-- NgModel -->
+<input type="text" [(ngModel)]="nombre"><!-- La directiva ngModel es lo que proporciona la comunicación bidireccional en 
+el .ts y el .html -->
+<input type="number" [(ngModel)]="numero">
+<button type="button" (click)="contenido()">CONTENIDO</button><!-- Va a llamar a la función contenido del typescritp -->
+
+<app-boton2 [nombre_hijo]="nombre" (mensajeAlPadre)="recibirMensaje($event)"></app-boton2>
+
+{{mensaje}}
