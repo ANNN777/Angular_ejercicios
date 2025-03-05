@@ -9,8 +9,8 @@ import { FormsModule } from '@angular/forms';
   selector: 'app-editar-usuario',
   standalone: true,
   imports: [CommonModule, FormsModule],
-  templateUrl: './editar-usuario.component.html',
-  styleUrls: ['./editar-usuario.component.css']
+  templateUrl: './editar-usuarios.component.html',
+  styleUrls: ['./editar-usuarios.component.css']
 })
 export class EditarUsuarioComponent {
   usuario: any = { id: 0, nombre: '', correo: '' };

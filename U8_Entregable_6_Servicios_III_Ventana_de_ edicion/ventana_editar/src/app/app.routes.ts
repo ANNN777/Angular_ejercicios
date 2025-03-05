@@ -4,5 +4,5 @@ import { EditarUsuarioComponent } from './components/editar-usuarios/editar-usua
 
 export const routes: Routes = [
     { path: '', component: UsuariosComponent },
-    { path: 'editar', component: EditarUsuarioComponent}
+    { path: 'editar/:id', component: EditarUsuarioComponent}
 ];
