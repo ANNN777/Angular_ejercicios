@@ -1,0 +1,33 @@
+<body>
+    <div class="container mt-4">
+        <h1 class="text-center">Información de Países</h1>
+        <div class="mb-3">
+            <label for="continentSelect" class="form-label">Selecciona un continente:</label>
+            
+            <select id="continentSelect" class="form-select" [(ngModel)]="seleccionado" (change)="getDatos()">
+            
+                <option value="europe">Europa</option>
+                <option value="africa">África</option>
+                <option value="america">Américas</option>
+                <option value="asia">Asia</option>
+                <option value="oceania">Oceanía</option>
+            </select>
+        </div>
+        
+        <!-- Botón OBTENER DATOS -->
+        <button id="loadCountry" class="btn btn-primary">Obtener Países</button>
+
+        
+        <div id="countriesContainer" class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Aquí se insertarán las cards de los países dinámicamente -->
+             <!-- Aquí hago el @ for para coger el coger el pais y seleccionar el resultado que lo interpolaré más adelante -->
+           
+             @for(pais of resultados; track $index){
+                <p >El nombre del país es {{pais.name.common}}</p><!-- Viendo el json el nombre está dentro del name.common -->
+                <img [src]="pais.flags.png"><!-- Es para acceder a cada una de las imágenes de las banderas. -->
+                <p>//</p>
+                }
+              
+        </div>
+    </div>
+</body>

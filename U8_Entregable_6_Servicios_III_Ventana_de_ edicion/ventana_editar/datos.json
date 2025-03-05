@@ -1,0 +1,45 @@
+{
+    "usuarios": [
+      {
+        "id": "1",
+        "nombre": "Juan Pérez",
+        "correo": "juan@example.com"
+      },
+      {
+        "id": "2",
+        "nombre": "Ana López",
+        "correo": "ana@example.com"
+      },
+      {
+        "id": "3",
+        "nombre": "Carlos García",
+        "correo": "carlos@example.com"
+      },
+      {
+        "id": "4",
+        "nombre": "María Rodríguez",
+        "correo": "maria@example.com"
+      },
+      {
+        "id": "5",
+        "nombre": "Luis Fernández",
+        "correo": "luis@example.com"
+      },
+      {
+        "id": "6",
+        "nombre": "Elena Gómez",
+        "correo": "elena@example.com"
+      },
+      {
+        "id": "7",
+        "nombre": "Pedro Ramírez",
+        "correo": "pedro@example.com"
+      },
+      {
+        "id": "8",
+        "nombre": "Sofía Herrera",
+        "correo": "sofia@example.com"
+      }
+    ]
+  }
+  

@@ -1,0 +1,22 @@
+<h2>Lista de Usuarios</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            @for (usuario of usuarios; track $index) {
+            <tr>
+                <td>{{usuario.id}}</td>
+            <td>{{usuario.nombre}}</td>
+            <td>{{usuario.correo}}</td>
+            <td><button (click)="editarUsuario(usuario.id)">Editar</button></td>
+        </tr>    
+        }
+        </tbody>
+    </table>
